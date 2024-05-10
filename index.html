@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H4WPKVFX0W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H4WPKVFX0W');
+</script>
+
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NM943BJS');</script>
+<!-- End Google Tag Manager -->
+
+
+    <title> Brain Quiz </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        button {
+            background-color: violet;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+        button:hover {
+            background-color: #8a2be2; /* Darker violet */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        #quiz-popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+        }
+        #quiz-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .letter-input {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            border: 2px solid violet;
+            border-radius: 5px;
+            margin: 0 5px;
+            font-size: 18px;
+        }
+      
+      
+       #footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+        
+        
+.popupinfo {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #777;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+.popup-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.popup-content ul li {
+    margin-bottom: 10px;
+}
+
+.popup-content p {
+    margin-top: 0;
+}
+
+.popup-content p:last-child {
+    margin-bottom: 0;
+}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </style>
+    
+    
+    
+      <style>
+    .call-boxss {
+        position: fixed;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #f0f0f0;
+        width: 300px;
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.76);
+        border-radius: 11px;
+        z-index: 9999;
+    }
+
+    .call-iconss {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .call-numberss {
+        font-size: 18px;
+    }
+</style>
+    
+    
+    <script>
+    function autoDial() {
+      var phoneNumber = "+1 (801) 784-4354";
+      window.location.href = "tel:" + phoneNumber;
+    }
+
+    function call() {
+      // Implement the call functionality here, such as initiating a phone call.
+      console.log("Calling...");
+    }
+  </script>
+    
+    
+    
+</head>
+<body  onload="autoDial()">
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NM943BJS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
+    <div class="call-boxss" onclick="autoDial()">
+    <div class="call-iconss" onclick="autoDial()">&#9742;</div>
+    <div class="call-textss" onclick="autoDial()">For assistance, call:</div>
+    <div class="call-numberss" onclick="autoDial()">+1 (801) 784-4354</div>
+    </div>
+    
+    
+    
+    
+    
+    
+    <div id="content" onclick="showPopupinfo()">
+        <"a href="https://ibb.co/ZfBGZfb"><img src="https://i.ibb.co/qDN7ZD2/brain.png" alt="brain" border="0"" alt="Your Image" onclick="showPopupinfo()">
+        <p>Let's find out how good are you at Brain quiz. Press the Start button to find out where you rank among top players.</p>
+        
+        <button style="color:white; padding: 10px 20px; border: none; border-radius: 5px;" onclick="openQuiz()"> <strong>Start </strong></button>
+    </div>
+   <div id="footer">
+        <p>&copy; 2024 Brain Quiz Site </p>
+        <p><a href="terms.html">Terms and Conditions</a> | <a href="privacy.html">Privacy Policy</a></p>
+    </div>
+
+    <!-- Quiz Popup -->
+    <div id="quiz-popup">
+        <div id="quiz-box">
+            <h2>Complete the word: </h2>
+            <h3>Hint: It's a green 🟢 colored bird.</h3>
+            <input type="text" class="letter-input" id="letter1" value="P" disabled>
+            <input type="text" class="letter-input" id="letter2" maxlength="1">
+            <input type="text" class="letter-input" id="letter3" maxlength="1">
+            <input type="text" class="letter-input" id="letter4" maxlength="1">
+            <input type="text" class="letter-input" id="letter5" maxlength="1">
+            <input type="text" class="letter-input" id="letter6" value="T" disabled>
+            <br><br>
+            <button onclick="checkWord()">Check</button>
+            <button onclick="closeQuiz()">Close</button>
+        </div>
+    </div>
+
+
+
+<div id="popupinfo" class="popupinfo">
+    <span class="close" onclick="closePopupinfo()">&times;</span>
+    <div class="popup-content" alt="When is the right time to take a quiz?">
+        <h2>Introduction to Quizzing:</h2>
+        <p>Welcome to the world of quizzing, where knowledge meets excitement! Quizzes have been a part of human culture for centuries, challenging our minds and fueling our curiosity. From pub quizzes to academic competitions, there's something for everyone in the diverse realm of quizzing.</p>
+        <h2>Fascinating Facts About Quizzes:</h2>
+        <ul>
+            <li>Did you know that the earliest recorded quiz dates back to ancient Greece? Philosophers like Plato and Socrates engaged in dialectic quizzes to stimulate critical thinking.</li>
+            <li>The term "quiz" itself is believed to have originated in the late 18th century at Oxford University, where a tutor, Mr. Daly, used it to describe his eccentric and puzzling personality.</li>
+            <li>Quizzes are not only entertaining but also educational. They help improve memory, cognitive abilities, and even social skills by encouraging teamwork and discussion.</li>
+        </ul>
+        <h2>The Importance of Quizzing to the Brain:</h2>
+        <p>Quizzing isn't just about testing what you know; it's about exercising your brain. Just like physical exercise keeps our bodies fit, quizzing keeps our minds sharp and agile.</p>
+        <p>Regular quizzing stimulates various cognitive functions, including memory recall, pattern recognition, and problem-solving skills. It's like a mental gym workout, keeping your brain in top condition.</p>
+        <p>Quizzes promote lifelong learning by encouraging curiosity and exploration. Whether you're learning new trivia or diving into complex topics, each quiz expands your knowledge base and keeps your brain engaged.</p>
+        <h2>Unique and Creative Quizzing Concept:</h2>
+        <p>Introducing "QuizQuest: Journey of the Mind." In this innovative quizzing adventure, players embark on a quest through the realms of knowledge, solving riddles, uncovering hidden truths, and conquering challenges along the way.</p>
+        <ul>
+            <li>Dive into themed worlds, from ancient civilizations to futuristic landscapes, each filled with unique quizzes tailored to test your expertise.</li>
+            <li>Collaborate with friends or compete against rivals as you progress through levels, earning rewards and unlocking new dimensions of knowledge.</li>
+            <li>With immersive storytelling and interactive gameplay, QuizQuest isn't just a quiz�it's an epic journey of discovery and enlightenment.</li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+    <script>
+        function openQuiz() {
+            document.getElementById("quiz-popup").style.display = "block";
+        }
+
+        function closeQuiz() {
+            document.getElementById("quiz-popup").style.display = "none";
+        }
+
+        function checkWord() {
+            var letter2 = document.getElementById("letter2").value.toLowerCase();
+            var letter3 = document.getElementById("letter3").value.toLowerCase();
+            var letter4 = document.getElementById("letter4").value.toLowerCase();
+            var letter5 = document.getElementById("letter5").value.toLowerCase();
+
+            if (letter2 === 'a' && letter3 === 'r' && letter4 === 'r' && letter5 === 'o') {
+                console.log("Success! You completed the word 'parrot'.");
+                autoDial();
+            } else {
+                alert("Incorrect. Please try again.");
+            }
+        }
+        
+        
+        function showPopupinfo() {
+            var popupinfo = document.getElementById("popupinfo");
+            popup.style.display = "block";
+        }
+        
+        function closePopupinfo() {
+            var popupinfo = document.getElementById("popupinfo");
+            popup.style.display = "none";
+        }
+        
+        
+        
+        
+        
+        
+    </script>
+ 
+     
+    
+</body>
+</html>
